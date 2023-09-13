@@ -1,0 +1,376 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+/* Nav bar */
+#lnav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4vw;
+  align-items: center;
+  background-color: #719191;
+}
+
+#lnav h3 {
+  text-transform: uppercase;
+  font-weight: 540;
+  color: #fafafa;
+
+}
+
+#lnav h3 span {
+  font-weight: 700;
+}
+
+#user-icon {
+  font-size: 24px;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+/* container section starts */
+.container {
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fafafa;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(221, 160, 91, 0.18);
+  padding: 20px;
+  height: 100%;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+/* alert message  */
+.alert-message {
+  color: red;
+  width: 100%;
+  text-decoration: solid;
+  transition: all 0.3 ease;
+  transform: scale(0.9);
+  margin-bottom: 10px;
+}
+
+.alert-message.show {
+  display: block;
+  transform: scale(1);
+}
+
+.alert-message.hide {
+  display: none;
+}
+
+/* input section starts here  */
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  /* gap: 10px; */
+  height: 100%;
+
+}
+
+.input1 {
+  /* padding: 10px;
+  margin-right: 10px; */
+  margin-left: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+/* voice search button  */
+.voice-search-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.voice-search-button:hover {
+  background-color: #555;
+}
+
+/* ended ---------- */
+.input2 {
+  padding: 10px;
+  margin-right: 10px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.add-task-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #555;
+}
+
+
+/* Todos Filter */
+.todos-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dropdown-btn {
+  background-color: #719191;
+  color: #fafafa;
+  border: none;
+  font-weight: 500;
+  font-size: medium;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 130px;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  margin-left: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn1 {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fafafa;
+  font-size: medium;
+  font-weight: 500;
+  background-color: #719191;
+  transition: background-color 0.3s ease;
+  width: 131.6px;
+  margin-right: 20px;
+}
+
+
+
+.btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  height: 40.6px;
+  transition: background-color 0.3s ease;
+  /* width: 131.6px;
+    margin-right: 20px; */
+}
+
+.btn-warning {
+  background-color: rgb(255, 255, 255);
+  width: 47.6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #f4f4f4;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  max-height: 54vh;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.todos-list .todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.todo-item p {
+  margin-right: 10px;
+}
+
+.todo-item .todo-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+
+.todo-actions button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #eaf1f1;
+  color: #333;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table {
+    box-shadow: none;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>TaskHQPro</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <!-- Nav bar  -->
+    <div id="demo">
+        <div id="lnav">
+            <h3><span>ToDo</span>-List</h3>           
+            <div id="user-icon">
+                <i class="ri-user-fill"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Main To do list starts -->
+    <div class="container">
+        <header>
+            <h1>To Do List</h1>
+            <!-- error message -->
+            <div class="alert-message"></div>
+            <div class="input-section">
+                <input type="text" placeholder="Add a task . . . . "
+                    class="input1 input-bordered input-secondary w-full max-w-xs" />
+                <input type="date" class="input2 input-bordered input-secondary w-full max-w-xs schedule-date" />
+                <button class="btn btn-secondary add-task-button">
+                    <i class="ri-add-fill"></i>
+                </button>
+            </div>
+        </header>
+
+
+        <div class="todos-filter">
+            <div class="dropdown">
+                <button class="dropdown-btn">Filter</button>
+                <div class="dropdown-content">
+                    <a href="#" data-filter="all" onclick="filterTodos('all')">All</a>
+                    <a href="#" data-filter="pending" onclick="filterTodos('pending')">Pending</a>
+                    <a href="#" data-filter="completed" onclick="filterTodos('completed')">Completed</a>
+                </div>
+
+            </div>
+
+            <!-- search feature -->
+            <input type="text" placeholder="Search tasks..."
+                class="input1 input-bordered input-secondary w-full max-w-xs search-input" />
+                <button class="btn btn-secondary voice-search-button">
+                    <i class="ri-mic-fill"></i>
+                </button>
+                
+        
+
+
+            <button class="btn1 btn-secondary delete-all-btn">Delete All</button>
+        </div>
+
+        <!-- table  -->
+        <table class="table w-full">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="todos-list-body"></tbody>
+        </table>
+    </div>
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
